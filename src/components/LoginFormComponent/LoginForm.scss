@@ -1,0 +1,20 @@
+.login-form {
+  width: 100%;
+  .form-container {
+    .mantine-Input-input,
+    input {
+      height: 54px !important;
+    }
+    button {
+      height: 46px !important;
+    }
+  }
+  .bottom-form{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-size: 14px;
+    }
+  }
+}

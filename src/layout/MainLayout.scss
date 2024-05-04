@@ -1,0 +1,8 @@
+@import "./src/assets/styles/variables";
+.wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: $white;
+  padding-bottom: 1rem;
+}

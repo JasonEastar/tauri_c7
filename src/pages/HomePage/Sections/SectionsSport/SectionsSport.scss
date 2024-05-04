@@ -1,0 +1,63 @@
+@import "./src/assets/styles/variables";
+.section-sport {
+  .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .arrow_right {
+      img {
+      }
+    }
+  }
+  .section-content {
+    .football_match {
+      .heading-table {
+        .title-heading {
+          color: $textThird;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+      .content-table {
+        .content-left {
+          position: relative;
+          img {
+            height: 40px;
+            width: auto;
+          }
+          &::before{
+            content: '';
+            width: 1px;
+            height: 25px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: $textSecond;
+        }
+        }
+        .content-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          .club {
+            p {
+              font-size: 12px;
+              color: $textSecond;
+              font-weight: 600;
+            }
+          }
+          img {
+            width: auto;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

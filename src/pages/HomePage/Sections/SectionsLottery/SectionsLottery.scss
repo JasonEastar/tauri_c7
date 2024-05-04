@@ -1,0 +1,42 @@
+@import "./src/assets/styles/variables";
+.section-lottery {
+  margin-top: 0.5rem;
+  .heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .arrow_right {
+      img {
+      }
+    }
+  }
+  .section-content {
+    // margin-top: 0.5rem;
+    .mantine-UnstyledButton-root {
+      border-color: $white;
+      &:hover{
+        background-color: $white !important;
+      color: $colorPrimary;
+      }
+    }
+    .mantine-UnstyledButton-root:where([data-active]) {
+      border-color: $colorPrimary !important;
+      color: $colorPrimary;
+      font-weight: bold;
+    }
+    .content-tab {
+      margin-top: 1rem;
+      .loadmore {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

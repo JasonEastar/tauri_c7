@@ -1,0 +1,95 @@
+@import "./src/assets/styles/variables";
+
+.item-lottery {
+  background-color: $surface;
+  border-radius: 3px;
+  padding: 10px;
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-weight: 600;
+      font-size: 13px;
+      color: $textPrimary;
+    }
+  }
+  &-desc {
+    p {
+      font-size: 10px;
+      color: $textThird;
+    }
+  }
+  &-issue {
+    max-width: fit-content;
+    position: relative;
+    .button-issue {
+      background-color: $bgGray5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      color: $textPrimary;
+      padding: 1px 5px;
+      border-radius: 3px;
+      span{
+      font-size: 10px;
+      }
+      .arrow_dropdown{
+        width: 15px;
+      }
+    }
+    .select-issue {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .mantine-Input-input {
+      background-color: $bgGray5 !important;
+      font-size: 10px;
+    }
+  }
+  &-winnumber {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid $divider;
+    .item-winnumer {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 8px;
+      width: 20px;
+      background-color: $white;
+      border-radius: 100%;
+      height: 20px;
+    }
+  }
+  &-bottom {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 10px;
+      color: $textPrimary;
+    }
+    .timmer {
+      background-color: $colorPrimary;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 0;
+      p {
+        font-size: 10px;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "./src/assets/styles/variables";
+
+.header-wrapper {
+  height: 45px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.header-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 99;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  &-logo {
+  img{
+    width: 35px;
+    height: auto;
+  }
+  }
+  &-left {
+    img{
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &-right {
+    img{
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+
+.drawer-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; // Đảm bảo Drawer hiển thị trên cùng
+  display: flex;
+  justify-content: flex-end; // Hiển thị Drawer ở phía bên phải của giao diện
+}
+
+.drawer-content {
+  width: 80%; // Điều chỉnh kích thước của Drawer content theo nhu cầu
+  max-width: 300px; // Điều chỉnh kích thước tối đa của Drawer content theo nhu cầu
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Thêm hiệu ứng bóng đổ
+  height: 100%; // Đảm bảo Drawer content chiếm toàn bộ chiều cao của Drawer wrapper
+}
+
+.drawer-content-inner {
+  padding: 20px; // Thêm padding cho Drawer content
+  height: 100%; // Đảm bảo nội dung bên trong chiếm toàn bộ chiều cao của Drawer content
+}
